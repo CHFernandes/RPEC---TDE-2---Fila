@@ -25,8 +25,6 @@ public class Main {
 
 		System.out.println();
 
-		//ordenar(primeira);
-
 		Fila segunda = construir(5);
 
 		inserir(segunda, 5);
@@ -39,8 +37,6 @@ public class Main {
 		imprimir(segunda);
 
 		System.out.println();
-
-		//ordenar(segunda);
 
 		Fila terceira = construir(3);
 		inserir(terceira,1);
@@ -68,8 +64,6 @@ public class Main {
 	public static Fila merge(Fila a, Fila b) {
 		int na = tamanho(a);
 		int nb = tamanho(b);
-		//Fila temp = ordenar(a);
-		//Fila temp2 = ordenar(b);
 		int nc = na + nb;
 
 		Fila c = new Fila(nc);
@@ -140,15 +134,4 @@ public class Main {
 		return f.data();
 	}
 
-	/*public static Fila ordenar(Fila f) {
-		int p = f.infirst();
-		int u = f.inlast();
-		int i = p;
-		int j = u;
-		while(i  u) {
-			
-		}
-		return f;
-	}
-	*/
 }

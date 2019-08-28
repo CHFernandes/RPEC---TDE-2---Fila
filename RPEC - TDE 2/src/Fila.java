@@ -41,20 +41,6 @@ public class Fila {
             System.out.println("Fila Cheia");
         }
     }
-    
-    public void Remover() {
-		if (verificavazio() == false) {
-		if (this.primeiro == (MAX - 1)) {
-			dado[primeiro] = 0;
-			this.primeiro = 0;
-		} else
-		dado[primeiro] = 0;
-		this.primeiro = primeiro + 1;
-		this.tamanho = tamanho - 1;
-		System.out.println("Item removido");
-		} else
-			System.out.println("Fila Vazia");
-	}
 
     public boolean verificacheio(){
         if(this.tamanho != this.MAX){
