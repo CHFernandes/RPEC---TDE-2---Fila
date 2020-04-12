@@ -61,6 +61,9 @@ public class Fila {
     public void imprimir(){
         int p = this.primeiro;
         int u = this.ultimo + 1;
+        if(u == this.MAX){
+            u = 0;
+        }
         if (p != u){
             for (int i = p; i != u; i++){
                 System.out.println(this.dado[i]);
